@@ -108,11 +108,15 @@
 }
 
 .sliderArrow {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 40%;
   z-index: 2;
   cursor: pointer;
+
+  @media screen and (max-width: 672px) {
+    display: none;
+  }
   &_left {
     left: 0;
   }
@@ -124,12 +128,9 @@
     rotate: 90deg;
   }
   &_bottom {
-    bottom: -50%;
+    bottom: -30%;
     z-index: 999;
     rotate: 90deg;
-  }
-  @media screen and (max-width: 672px) {
-    display: none;
   }
 }
 
