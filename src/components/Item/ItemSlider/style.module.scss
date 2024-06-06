@@ -67,9 +67,9 @@
   }
   @media screen and (max-width: 475px) {
     max-width: 350px;
-    &_iframe {
-      width: fit-content;
-      scale: 0.55;
+    iframe {
+      max-width: 100%;
+      transform: translate(0, 5%);
     }
   }
 }
